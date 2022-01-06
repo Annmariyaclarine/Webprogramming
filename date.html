@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Date
+</title>
+<body>
+Click on the button to display date<br>
+<button onclick="date()">click me</button>
+<p id="demo"></p>
+<script>
+	function date(){
+	var d=new Date();
+	document.getElementById("demo").innerHTML=d.toDateString();
+}
+</script>
+</body>
+</html>

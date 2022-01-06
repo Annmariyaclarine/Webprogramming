@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Java Script 
+</title>
+</head>
+<body>
+Enter a number to find the reverse of a number<br>
+<input type="text" id="num">
+<button onclick="rev()">click me</button>
+<p id="revnum"></p>
+<script>
+function rev(){
+	var x=document.getElementById("num").value;
+	let s=0;
+	let d=0;
+	let i=x;
+
+	while(i!=0)
+	{
+		d=i%10;
+		s=s*10+d;
+		i=Math.floor(i/10);
+	}
+document.getElementById("revnum").innerHTML = s;
+}
+
+</script>
+</body>
+</html>

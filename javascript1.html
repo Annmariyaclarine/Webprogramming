@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Java Script 
+</title>
+</head>
+<body>
+<h1>Read input and print it in the paragraph tag</h1><br>
+Enter your text in the given text area<br>
+<textarea id="text2" name="text2" rows="3" cols="30"></textarea>
+<p>Click on the button to see what you have entered to appear in the html document</p>
+<button onclick="fun()">click me</button>
+<p id="para1"></p>
+<script>
+function fun(){
+var x = document.getElementById("text2").value;
+document.getElementById("para1").innerHTML =x;
+}
+</script>
+
+</body>
+</html>

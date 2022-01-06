@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java Script
+</title>
+<style>
+.headg{
+         margin-bottom: 10px;
+         text-align:center;
+         width: 309px;
+         color:  #8600b3;
+         border: solid black 2px;
+    font-size:25px;
+         }
+table, tr, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+ 
+}
+#clear{
+width: 310px;  
+border: 3px solid gray;  
+    border-radius: 3px;  
+    padding: 20px;  
+    background-color: red;  
+}  
+  input[type="button"]
+         {
+         background-color: #000066;
+         color: white;
+         border: solid black 2px;
+         width:75px;
+         height:55px;
+font-size:25px;
+         }
+input[type="text"]
+         {
+         background-color:#fff2cc;
+         border: solid black 2px;
+         font-size:20px;
+          height:55px;
+         width:97%
+         }
+</style>
+</head>
+<body>
+<script>
+function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+</script>
+<div class="headg"><b>CALCULATOR</b></div>
+<table >
+       <tr>
+            <td colspan="4" height="50px"><input type="text" id="result"></td>
+  </tr>
+         <tr>
+          <td><input type="button" value="1" onclick="dis('1')"> </td>
+            <td><input type="button" value="2" onclick="dis('2')"> </td>
+            <td><input type="button" value="3" onclick="dis('3')"> </td>
+            <td><input type="button" value="/" onclick="dis('/')"> </td>
+        </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"> </td>
+            <td><input type="button" value="5" onclick="dis('5')"> </td>
+            <td><input type="button" value="6" onclick="dis('6')"> </td>
+            <td><input type="button" value="-" onclick="dis('-')"> </td>
+         </tr>
+       <tr>
+            <td><input type="button" value="7" onclick="dis('7')"> </td>
+            <td><input type="button" value="8" onclick="dis('8')"> </td>
+            <td><input type="button" value="9" onclick="dis('9')"> </td>
+            <td><input type="button" value="+" onclick="dis('+')"> </td>
+         </tr>
+      <tr>
+            <td><input type="button" value="." onclick="dis('.')"> </td>
+            <td><input type="button" value="0" onclick="dis('0')"> </td>
+            <td><input type="button" value="=" onclick="solve()"> </td>
+            <td><input type="button" value="*" onclick="dis('*')"> </td>
+         </tr>
+<tr>
+<td colspan="4"><input type="button" value="Clear" onclick="clr()" id=clear> </td>
+</tr>
+ </table>
+
+</body>
+</html>
