@@ -1,48 +1,82 @@
-
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+} 
 body{
-		background-color:#FFC0CB;
-		background-size: 100%;
-		background-repeat: no-repeat;
+   
+    background-image: url("https://cdn.mos.cms.futurecdn.net/8FXSYkHRGGLNhqKaWGfNLQ-970-80.jpg.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
 }
+.box1{
 
-header{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background: linear-gradient(to right, grey,white );
+background-color: #fff;
+border-radius: 10px;
+-webkit-border-radius:10px;
+overflow: hidden;
+box-shadow: blueviolet;
 }
-
-.navvv li{
-		display: inline-block;
-		padding: 0 20px;
+.header{
+    background: linear-gradient(to right, #74ebd5, #9face6);
+     padding: 30px 30px ;
+ }
+ .header h2{
+    color: #222;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+ }
+  .header-login{
+background: linear-gradient(to right, #74ebd5, #9face6);
+ padding: 20px 50px ;
 }
-
-.log{
-
+.header-login h2{
+color: #222;
+font-size: 24px;
+text-transform: uppercase;
+text-align: center;
 }
-
-.home_div{
-			border-top-left-radius:5px;
- 			border-top-right-radius:    5px;
-  			border-bottom-right-radius: 5px;
-  			border-bottom-left-radius:  5px;
-			padding: 5px;
-			border: 2px;background-color: white;
-			margin: 25px 165px 50px 165px;"
+.form{
+ padding: 40px;
 }
-a{
-	font-weight: bolder;
-	
+.form-controler{
+margin-bottom: 20px;
+position: relative;
 }
-
-h1{
-	color: red;
-	font-size: 45px;
+.form-controler label {
+ display: inline-block;
+ margin-bottom: 5px;
+font-size: large;
 }
-
-
-input [type=text]{
-  width: 100%;
-  border-radius: 4px;
+.form-controler input {
+ width: 100%;
+ border: 2px solid #f0f0f0;
+ border-radius: 5px;
+ display: block;
+ font-size: 14px;
+ padding: 12px;
+}
+.form .btn{
+background: mediumslateblue;
+ border-radius: 6px;
+ border: none;
+ outline: none;
+ color: #fff;
+ display: block;
+ font-size: 16px;
+ padding: 10px 0;
+ margin-top: 10px;
+ width: 100%;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+.form .btn:hover{
+ background: linear-gradient(to right, #74ebd5, #9face6);
 }

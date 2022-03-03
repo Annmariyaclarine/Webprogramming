@@ -6,7 +6,7 @@ function validate_register(){
     var phone =document.getElementById("phone_num").value;
     var pass =document.getElementById("pass").value;
     var conpass =document.getElementById("con_pass").value;
-    
+   
     var atindex = email.indexOf('@');
     var atdot = email.indexOf('.');
 
@@ -15,7 +15,7 @@ function validate_register(){
         alert("Name cannot be blank and  it should contain minimum 3 words");
         return false;
     }
-    
+   
    else if(email.indexOf("@") == -1 || email.indexOf(".") <= 0 ||email.length < 6) {
         alert("Enter correct email");
         return false;
@@ -25,7 +25,7 @@ function validate_register(){
         alert("Enter correct phone number");
         return false;
     }
-    
+   
     else if(pass.trim() =="" )
     {
         alert("password cannot be blank");
