@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Java Script 
+</title>
+</head>
+<body>
+Check Armstrong or not<br>
+<script type="text/javascript">
+armstrong();
+function armstrong(){
+
+
+	var num=prompt("Enter a number to check whether it is armstrong or not:");
+	let temp1=num;
+	let temp2=num;
+	let s=0;
+	var r;
+	while(num!=0)
+	{	s=s+1;
+		num=Math.floor(num/10);
+	}
+	let rs=0;
+	while(temp2!=0)
+	{
+		r=temp2%10;
+		rs=rs+r**s;
+		temp2=Math.floor(temp1/10);
+	}
+	if(rs==temp1){
+		document.getElementById("demo").innerHTML =
+   		 "Number=" + temp1 + "<br> number of digits="+ s +"<br> "+ temp1 + "is a armstrong number";
+		}
+	
+	else{
+		document.getElementById("demo").innerHTML =
+    		"Number= " + temp1 + "is not an armstrong number";
+  	}
+	
+}
+
+</script>
+<p id="demo"> </p>
+</body>
+</html>
